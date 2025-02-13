@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body, #root{
+  height: 100%;
+  width: 100%;
+}
+
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  
+}
+
+main .left, main .right{
+  height: 100%;
+  flex-basis: 50%;
+  /* flex-direction: row-reverse; */
+  border-radius: 1rem;
+}
+
+
+
+main .right{
+  background-color: rgb(24, 24, 24);
+  position: relative;
+}
+main .left{
+  /* background-color: rgb(4, 4, 4); */
+  background: black;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.left .code, .code pre, .code pre code{
+  height: 100%;
+  width: 100%; 
+  /* background-color: rgb(4, 4, 4); */
+  margin-top: -0.5rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+
+main .left .btn{
+  position: absolute;
+  bottom: 3rem;
+  left: 37%;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgb(210, 233, 233);
+  color: black;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.8rem;
+}
+
+/* App.css */
+
+.npm__react-simple-code-editor__textarea:focus {
+  outline: none;
+}
+
